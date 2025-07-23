@@ -11,7 +11,12 @@
     <meta name="author" content="LEFT4CODE">
     <title>{{ $title ?? 'Dashboard' }}</title>
     <!-- BEGIN: CSS Assets-->
-    <link rel="stylesheet" href="{{ asset('dist/css/app.css') }}" />
+    @vite([
+    'resources/js/app.js',
+    'resources/dist/css/app.css',
+    'resources/dist/js/app.js',
+])
+
     <!-- END: CSS Assets-->
 </head>
 
